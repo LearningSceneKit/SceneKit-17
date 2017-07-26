@@ -15,6 +15,10 @@
 		838039971F271513000F0340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838039951F271513000F0340 /* LaunchScreen.storyboard */; };
 		838039A21F271513000F0340 /* SceneKit_17____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838039A11F271513000F0340 /* SceneKit_17____Tests.m */; };
 		838039AD1F271513000F0340 /* SceneKit_17____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838039AC1F271513000F0340 /* SceneKit_17____UITests.m */; };
+		838039C21F27163B000F0340 /* foliage.png in Resources */ = {isa = PBXBuildFile; fileRef = 838039BD1F27163B000F0340 /* foliage.png */; };
+		838039C41F27163B000F0340 /* palm_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 838039BF1F27163B000F0340 /* palm_tree.dae */; };
+		838039C61F2719D6000F0340 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838039C51F2719D6000F0340 /* floor.jpg */; };
+		838039C81F271FB4000F0340 /* shadow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 838039C71F271FB4000F0340 /* shadow.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		838039A81F271513000F0340 /* SceneKit-17阴影使用UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SceneKit-17阴影使用UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838039AC1F271513000F0340 /* SceneKit_17____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SceneKit_17____UITests.m"; sourceTree = "<group>"; };
 		838039AE1F271513000F0340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838039BD1F27163B000F0340 /* foliage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foliage.png; sourceTree = "<group>"; };
+		838039BF1F27163B000F0340 /* palm_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = palm_tree.dae; sourceTree = "<group>"; };
+		838039C51F2719D6000F0340 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
+		838039C71F271FB4000F0340 /* shadow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shadow.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		838039861F271513000F0340 /* SceneKit-17阴影使用 */ = {
 			isa = PBXGroup;
 			children = (
+				838039BA1F27163B000F0340 /* palmTree */,
 				8380398A1F271513000F0340 /* AppDelegate.h */,
 				8380398B1F271513000F0340 /* AppDelegate.m */,
 				8380398D1F271513000F0340 /* ViewController.h */,
@@ -138,6 +147,17 @@
 				838039AE1F271513000F0340 /* Info.plist */,
 			);
 			path = "SceneKit-17阴影使用UITests";
+			sourceTree = "<group>";
+		};
+		838039BA1F27163B000F0340 /* palmTree */ = {
+			isa = PBXGroup;
+			children = (
+				838039C51F2719D6000F0340 /* floor.jpg */,
+				838039BD1F27163B000F0340 /* foliage.png */,
+				838039C71F271FB4000F0340 /* shadow.jpg */,
+				838039BF1F27163B000F0340 /* palm_tree.dae */,
+			);
+			path = palmTree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +227,8 @@
 				TargetAttributes = {
 					838039831F271513000F0340 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = X585696T4B;
+						ProvisioningStyle = Manual;
 					};
 					8380399C1F271513000F0340 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -248,7 +269,11 @@
 			files = (
 				838039971F271513000F0340 /* LaunchScreen.storyboard in Resources */,
 				838039941F271513000F0340 /* Assets.xcassets in Resources */,
+				838039C61F2719D6000F0340 /* floor.jpg in Resources */,
+				838039C21F27163B000F0340 /* foliage.png in Resources */,
 				838039921F271513000F0340 /* Main.storyboard in Resources */,
+				838039C41F27163B000F0340 /* palm_tree.dae in Resources */,
+				838039C81F271FB4000F0340 /* shadow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +449,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X585696T4B;
 				INFOPLIST_FILE = "SceneKit-17阴影使用/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShiWenChen.com.SceneKit-17----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34779f32-976c-48a9-8576-55b1d8bc4e7b";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Debug;
 		};
@@ -435,10 +464,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X585696T4B;
 				INFOPLIST_FILE = "SceneKit-17阴影使用/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShiWenChen.com.SceneKit-17----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34779f32-976c-48a9-8576-55b1d8bc4e7b";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Release;
 		};
@@ -507,6 +540,7 @@
 				838039B31F271513000F0340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838039B41F271513000F0340 /* Build configuration list for PBXNativeTarget "SceneKit-17阴影使用Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +549,7 @@
 				838039B61F271513000F0340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838039B71F271513000F0340 /* Build configuration list for PBXNativeTarget "SceneKit-17阴影使用UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +558,7 @@
 				838039B91F271513000F0340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
